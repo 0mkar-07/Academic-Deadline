@@ -1,21 +1,26 @@
 #include<iostream>
 using namespace std;
 #include "Task.h"
+#include "assignment.h"
 
 int main(){
     int id;
-    string s;
+    string t,sub,d;
 
     cout<<"enter ID : ";
     cin>>id;
     cin.ignore(); // ignore \n created by above cin. so getline can take input
     cout<<"enter title : ";
-    getline(cin,s);
+    getline(cin,t);
+    cout<<"enter subject : ";
+    getline(cin,sub);
+    cout<<"enter date : ";
+    getline(cin,d);
 
-    Task t1(id,s);
-    t1.display();
-    t1.isCompleted();
-    t1.display();
+    Assignment a(id,t,sub,d);
+    a.display();
+
+    
 
 
 
