@@ -15,6 +15,7 @@ class Task{
         virtual ~Task();
         void display();
         bool isCompleted();
+        int id();
 
 };
 

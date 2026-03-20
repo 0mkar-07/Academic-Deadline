@@ -9,7 +9,7 @@ Task :: Task(int id,string detail){
 }
 
 Task :: ~Task(){
-    cout<<"its a destructor\n";
+    //cout<<"its a destructor\n";
 }
 
 void Task:: display(){
@@ -25,18 +25,11 @@ void Task:: display(){
 }
 
 bool Task :: isCompleted(){
-    
-    int n;
-    cout<< "1->completed\n0->not completed\nenter : ";
-    cin>>n;
+    completed=true;
+    return true;
 
-    if(n==1){
-        completed=true;
-        return true;
-    }
-    else{
-        completed=false;
-        return false;
-    }
+}
 
+int Task :: id(){
+    return unique_id;
 }
