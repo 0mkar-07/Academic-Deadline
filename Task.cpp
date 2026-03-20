@@ -9,7 +9,7 @@ Task :: Task(int id,string detail){
 }
 
 Task :: ~Task(){
-    cout<<"its a destructor";
+    cout<<"its a destructor\n";
 }
 
 void Task:: display(){

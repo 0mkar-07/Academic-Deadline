@@ -20,9 +20,4 @@ int main(){
     Assignment a(id,t,sub,d);
     a.display();
 
-    
-
-
-
-
 }
