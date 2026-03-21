@@ -29,7 +29,7 @@ void TaskManager :: markCompleted(int id){
 
     for(int i=0 ;i<assignments.size();i++){
 
-        if(assignments[i].id()==id){
+        if(assignments[i].show_id()==id){
             assignments[i].isCompleted();
             assignments[i].display();
             cout<<endl;
