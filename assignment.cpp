@@ -14,3 +14,10 @@ void Assignment :: display(){
     cout<<"subject : "<<subject<<endl;
     cout<<"deadline : "<<deadline<<endl;
 }
+
+string Assignment :: show_subject(){
+    return subject;
+}
+string Assignment :: show_deadline(){
+    return deadline;
+}

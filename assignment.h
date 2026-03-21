@@ -12,6 +12,8 @@ class Assignment : public Task{
     public:
         Assignment(int id,std::string detail,std :: string sub,std :: string date ) : Task(id,detail),subject(sub),deadline(date){};
         void display();//override
+        std :: string show_subject();
+        std::string show_deadline();
 
 
 };
