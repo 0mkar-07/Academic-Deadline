@@ -30,6 +30,14 @@ bool Task :: isCompleted(){
 
 }
 
-int Task :: id(){
+int Task :: show_id(){
     return unique_id;
+}
+
+string Task ::show_title(){
+    return title;
+}
+
+bool Task :: show_completed(){
+    return completed;
 }

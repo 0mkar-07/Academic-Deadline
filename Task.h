@@ -15,8 +15,9 @@ class Task{
         virtual ~Task();
         void display();
         bool isCompleted();
-        int id();
-
+        int show_id();
+        std :: string show_title();
+        bool show_completed();
 };
 
 #endif
