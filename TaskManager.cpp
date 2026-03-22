@@ -36,9 +36,9 @@ void TaskManager :: markCompleted(int id){
             return;
         }
 
-        cout<<id<<" dosent exist"<<endl;
-
+        
     }
+    cout<<id<<" dosent exist"<<endl;
 
 }
 

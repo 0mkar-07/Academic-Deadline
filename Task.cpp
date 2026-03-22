@@ -20,8 +20,6 @@ void Task:: display(){
     cout<<"Status : completed "<<endl;
     else
     cout<<"Status : not completed"<<endl;
-
-    cout<<endl<<endl;
 }
 
 void Task :: markCompleted(){
