@@ -14,6 +14,7 @@ class Assignment : public Task{
         void display() override;
         std :: string show_subject();
         std::string show_deadline();
+        void display2();
 
 
 };

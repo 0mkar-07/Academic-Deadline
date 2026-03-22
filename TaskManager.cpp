@@ -45,7 +45,7 @@ void TaskManager :: markCompleted(int id){
 void TaskManager :: listAssignment(){
 
     for(int i=0;i<assignments.size();i++){
-        assignments[i].display();
+        assignments[i].display2();
         cout<<endl;
     }
 
