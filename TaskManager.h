@@ -10,7 +10,7 @@ class TaskManager{
     public:
         void addAssignment();
         void markCompleted(int id);
-        void listAssignmrnt();
+        void listAssignment();
         friend class FileStorage;
 };
 
