@@ -24,10 +24,8 @@ void Task:: display(){
     cout<<endl<<endl;
 }
 
-bool Task :: isCompleted(){
+void Task :: markCompleted(){
     completed=true;
-    return true;
-
 }
 
 int Task :: show_id(){

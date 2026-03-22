@@ -13,8 +13,8 @@ class Task{
     public:
         Task(int id,std :: string detail);
         virtual ~Task();
-        void display();
-        bool isCompleted();
+        virtual void display();
+        void markCompleted();
         int show_id();
         std :: string show_title();
         bool show_completed();
