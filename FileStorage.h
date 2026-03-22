@@ -3,15 +3,16 @@
 #include "TaskManager.h"
 #include<filesystem>
 #include<fstream>
+#include<sstream>
 class FileStorage{
     private:
-        std :: string data_folder="/home/omkar/git_folder/academic_deadlines";
-        std :: string data_file="/home/omkar/git_folder/academic_deadlines/data,txt";
+        std :: filesystem :: path data_folder="data_file";
+        std :: filesystem ::path data_file="data_file/data.txt";
 
     public:
         FileStorage();
-        void saveAssignment(TaskManager &manager_list);
-        void loadAssignment();
+        void saveAssignment(TaskManager& manager);
+        void loadAssignment(TaskManager& manager);
 };
 
 #endif
