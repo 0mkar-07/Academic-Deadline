@@ -1,6 +1,7 @@
 #include "TaskManager.h"
 #include<iostream>
 #include "FileStorage.h"
+#include<string>
 
 using namespace std;
 
@@ -54,7 +55,7 @@ void TaskManager :: listAssignment(){
 
 void TaskManager :: deleteAssignment(int id,FileStorage &fs){
 
-    
+
     bool found=false;
 
     for(int i=0;i<assignments.size();i++){
@@ -74,3 +75,21 @@ void TaskManager :: deleteAssignment(int id,FileStorage &fs){
     fs.saveAssignment(*this);
 }
 
+void TaskManager :: addAssignment(string title,string sub,string date){
+    int id;
+
+    //creating temp helping object fs , the main data is in data.txt not in vector
+    // if we want data we can get it from fs.loadAffignment();
+    FileStorage fs;
+    if(assignments.size()==0){
+        id=1;
+    }
+    else{
+        id=assignments.back().show_id()+1;
+    }
+
+    Assignment a(id,title,sub,date);
+    assignments.push_back(a);
+    fs.saveAssignment(*this);
+
+}
