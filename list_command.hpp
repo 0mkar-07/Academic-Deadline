@@ -2,7 +2,7 @@
 #include "CLI/CLI.hpp"
 #include "icommand.hpp"
 #include "TaskManager.h"
-using namespace std;
+
 
 class ListCommand : public ICommand{
 
@@ -10,9 +10,9 @@ class ListCommand : public ICommand{
     TaskManager *tm;
 
     void execute(){
-        cout<<"----------------------------------------------------------------\n";
+        std::cout<<"----------------------------------------------------------------\n";
         tm->listAssignment();
-        cout<<"----------------------------------------------------------------\n";
+        std::cout<<"----------------------------------------------------------------\n";
     }
 
     public:
