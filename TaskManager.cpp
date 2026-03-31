@@ -1,6 +1,6 @@
 #include "TaskManager.h"
 #include<iostream>
-
+#include "FileStorage.h"
 
 using namespace std;
 
@@ -50,5 +50,27 @@ void TaskManager :: listAssignment(){
     }
 
 
+}
+
+void TaskManager :: deleteAssignment(int id,FileStorage &fs){
+
+    
+    bool found=false;
+
+    for(int i=0;i<assignments.size();i++){
+
+        if(assignments[i].show_id()==id){
+            assignments.erase(assignments.begin()+i);
+            cout<<"task "<<id<<" has been deleted \n";
+            found=true;
+            break;
+        }
+
+        
+    }
+    if(!found)
+    cout<<"task "<<id<<" dosent exist \n";
+
+    fs.saveAssignment(*this);
 }
 

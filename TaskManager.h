@@ -2,6 +2,8 @@
 #define TASKMANAGER_H
 #include "assignment.h"
 #include<vector>
+
+class FileStorage;
 class TaskManager{
 
     private:
@@ -11,7 +13,9 @@ class TaskManager{
         void addAssignment();
         void markCompleted(int id);
         void listAssignment();
+        void deleteAssignment(int id,FileStorage &fs);
         friend class FileStorage;
 };
+
 
 #endif

@@ -1,9 +1,9 @@
 #ifndef FILESTORAGE_H
 #define FILESTORAGE_H
-#include "TaskManager.h"
 #include<filesystem>
 #include<fstream>
 #include<sstream>
+class TaskManager;
 class FileStorage{
     private:
         std :: filesystem :: path data_folder="data_file";
@@ -14,5 +14,4 @@ class FileStorage{
         void saveAssignment(TaskManager& manager);
         void loadAssignment(TaskManager& manager);
 };
-
 #endif
