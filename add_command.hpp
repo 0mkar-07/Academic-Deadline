@@ -3,13 +3,13 @@
 #include "TaskManager.h"
 #include "CLI/CLI.hpp"
 #include<string>
-using namespace std;
+
 
 class AddCommand : public ICommand {
     private:
     TaskManager *tm;
     
-    string title,date,sub;
+    std :: string title,date,sub;
     void execute() {
         // Call TaskManager.addAssignment(...)
     
@@ -20,7 +20,6 @@ class AddCommand : public ICommand {
 
     AddCommand(TaskManager &tm){
         this->tm=&tm;
-        cout<<"assignment added sucussfully"<<endl;
         
     };
     
