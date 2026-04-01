@@ -28,18 +28,22 @@ void TaskManager :: addAssignment(){
 
 void TaskManager :: markCompleted(int id){
 
+    FileStorage fs;
+
     for(int i=0 ;i<assignments.size();i++){
 
         if(assignments[i].show_id()==id){
             assignments[i].markCompleted();
             assignments[i].display();
             cout<<endl;
+            fs.saveAssignment(*this);
             return;
         }
 
         
     }
     cout<<id<<" dosent exist"<<endl;
+
 
 }
 
