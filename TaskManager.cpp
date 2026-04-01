@@ -57,9 +57,9 @@ void TaskManager :: listAssignment(){
 
 }
 
-void TaskManager :: deleteAssignment(int id,FileStorage &fs){
+void TaskManager :: deleteAssignment(int id){
 
-
+    FileStorage fs;
     bool found=false;
 
     for(int i=0;i<assignments.size();i++){

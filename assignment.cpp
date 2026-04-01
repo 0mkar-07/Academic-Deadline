@@ -32,8 +32,8 @@ void Assignment :: display2(){
     cout << left
      << setw(5)  << show_id()
      << setw(25) << show_title()
-     << setw(10) << show_subject()
-     << setw(10) << show_deadline()
+     << setw(20) << show_subject()
+     << setw(12) << show_deadline()
      << setw(3) << show_completed()
      << endl;
 }

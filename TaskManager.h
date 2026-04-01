@@ -14,7 +14,7 @@ class TaskManager{
         void addAssignment();
         void markCompleted(int id);
         void listAssignment();
-        void deleteAssignment(int id,FileStorage &fs);
+        void deleteAssignment(int id);
         friend class FileStorage;
         void addAssignment(std::string title,std::string sub,std::string date);
 };

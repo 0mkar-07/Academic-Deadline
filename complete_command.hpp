@@ -12,7 +12,7 @@ class CompleteCommand : public ICommand{
 
         void execute(){
             tm->markCompleted(id);
-
+        
         }
     public:
 
