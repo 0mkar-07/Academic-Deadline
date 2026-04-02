@@ -20,11 +20,12 @@ public:
 
     void setup(CLI::App &app){
 
-        auto deletex=app.add_subcommand("delete","Delete assignment of <id>");
+        auto deletex=app.add_subcommand("delete","Delete assignment for given ID");
 
-        deletex->add_option("delete",id,"Enter id");
+        deletex->add_option("delete",id,"Enter id")->required();
 
         deletex->callback([this](){execute();});
     }
+
 };
 

@@ -28,7 +28,6 @@ class ListCommand : public ICommand{
         list->callback([this]() { execute(); });
     }
 
-
 };
 
 

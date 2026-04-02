@@ -38,6 +38,5 @@ class AddCommand : public ICommand {
         
         
        add->callback([this]() { execute(); });
-    }
-    
+    }  
 };

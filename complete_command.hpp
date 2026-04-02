@@ -31,5 +31,4 @@ class CompleteCommand : public ICommand{
 
         }
 
-
 };

@@ -29,8 +29,4 @@ int main(int argc,char** argv){
     deletex.setup(app);
 
     CLI11_PARSE(app,argc,argv);
-
-
-    
-
 }
